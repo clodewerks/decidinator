@@ -1,0 +1,19 @@
+{
+  "name": "decidinator2017",
+  "version": "1.0.0",
+  "description": "It decides so you don't have to",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kyle Linneman",
+  "license": "ISC"
+}

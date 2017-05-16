@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  background: #eee; }
+
+input {
+  background: #ddd;
+  border: 1px solid #333; }
+
+.wrapper {
+  min-height: 90%; }
+
+.how-many {
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.input-box {
+  width: 20%;
+  margin: 0px auto; }
+
+.input {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.input-label {
+  font-weight: bold; }
+
+.decide-button {
+  margin: 40px 0px;
+  width: 20%;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #333; }
+
+.decision {
+  font-size: 30px; }
+
+footer {
+  bottom: 0px;
+  height: 10%;
+  position: relative;
+  width: 100%; }
