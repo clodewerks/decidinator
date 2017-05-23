@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');    
 var uglify = require('gulp-uglify'); 
+var order = require("gulp-order");
 
 gulp.task('default', function() {
   // place code for your default task here
@@ -54,6 +55,12 @@ gulp.task('ship-css', function() {
 
 gulp.task('ship-js', function() {
   return gulp.src('app/js/**/*.js')
+  .pipe(order([
+    "app/js/jquery.min.js",
+    "app/js/bootstrap.min.js",
+    "app/js/angular.min.js",
+    "app/js/decide.js"
+  ],{base: '.'}))
   .pipe(concat('scripts.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/'));
